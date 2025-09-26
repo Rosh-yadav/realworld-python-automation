@@ -55,10 +55,5 @@ These two modules make the script powerful and flexible for real-world use cases
 
 For a detailed breakdown of each concept used in this script, see [explanation_notes.md](explanation_notes.md).
 
----
-
-```
-
----
 
 

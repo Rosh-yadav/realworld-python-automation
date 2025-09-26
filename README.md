@@ -10,18 +10,18 @@ Most beginners know Python basics but don’t know where to apply them in real p
 
 ## 📂 Repository Structure
 
-
 realworld-python-automation/
 │
 ├── Day01_Project_Folder_Automation/
-│ ├── folder_structure.py # Python script
-│ ├── explanation_notes.md # Detailed concepts
-│ └── README.md # Usage for Day 01
+│   ├── folder_structure.py        # Python script
+│   ├── explanation_notes.md       # Detailed concepts
+│   └── README.md                  # Usage for Day 01
 │
-├── Day02_XXXX/ # Coming soon
+├── Day02_XXXX/                    # Coming soon
 │
-├── requirements.txt # Dependencies (if needed later)
-└── README.md # This file
+├── requirements.txt               # Dependencies (if needed later)
+└── README.md                      # Main repo overview (this file)
+
 
 
 ## 🛠️ How to Use
