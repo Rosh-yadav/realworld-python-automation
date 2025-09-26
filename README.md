@@ -9,6 +9,8 @@ Most beginners know Python basics but don’t know where to apply them in real p
 - Real-world examples from a DevOps engineer’s perspective.  
 
 ## 📂 Repository Structure
+
+
 realworld-python-automation/
 │
 ├── Day01_Project_Folder_Automation/
@@ -25,7 +27,7 @@ realworld-python-automation/
 ## 🛠️ How to Use
 1. Clone the repository:
    ```bash
-   git clone https://github.com/<your-username>/realworld-python-automation.git
+   git clone https://github.com/Rosh-yadav/realworld-python-automation.git
    cd realworld-python-automation
 
 2. Go into the day folder you want to try (example for Day 01):
