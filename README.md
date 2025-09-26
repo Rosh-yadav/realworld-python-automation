@@ -8,21 +8,6 @@ Most beginners know Python basics but don’t know where to apply them in real p
 - Detailed notes explaining Python concepts used in each scenario.  
 - Real-world examples from a DevOps engineer’s perspective.  
 
-## 📂 Repository Structure
-
-realworld-python-automation/
-│
-├── Day01_Project_Folder_Automation/
-│   ├── folder_structure.py        # Python script
-│   ├── explanation_notes.md       # Detailed concepts
-│   └── README.md                  # Usage for Day 01
-│
-├── Day02_XXXX/                    # Coming soon
-│
-├── requirements.txt               # Dependencies (if needed later)
-└── README.md                      # Main repo overview (this file)
-
-
 
 ## 🛠️ How to Use
 1. Clone the repository:
