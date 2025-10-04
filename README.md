@@ -24,16 +24,6 @@ python folder_structure.py "C:\Users\YourName\Projects" MyNewApp
 
 Check the explanation_notes.md file for detailed learning material.
 
-🔮 Upcoming Topics
-
-Day 02: File & Folder Automation
-
-Day 03: Log Parsing & Analysis
-
-Day 04: AWS Automation with Boto3
-
-And more…
-
 🤝 Contribution
 
 Want to add a new scenario or improve explanations? Fork this repo, create a branch, and raise a PR.
