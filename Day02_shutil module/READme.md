@@ -1,13 +1,48 @@
-# Python File Sorter (using `shutil`) — README
 
-## 1 — Scenario / Use case (why this script exists)
+🚀 **Python Real-World Use Case (Day 2)**
 
-You have an `export/` folder with hundreds of files. Each file name contains a vendor name (for example `apple_invoice_001.pdf`, `intel_report_02.csv`). You want a small automation script that:
+Today’s journey is all about the **`shutil` module** — Python’s *shell utilities* that make file & folder automation super easy.
 
-* Looks at each file name,
-* Finds which vendor it belongs to (Apple, Intel, Samsung, ...),
-* Creates a folder for that vendor, and
-* **Moves** the file to that vendor folder (so the `export/` folder becomes organized).
+### 🗂️ Use Case: File Sorting
+
+Imagine you have an `export/` folder with hundreds of messy files like:
+
+```
+apple_invoice1.pdf
+intel_report2.csv
+random_file.pdf
+```
+
+You want them neatly organized into:
+
+```
+sorted/
+  Apple/
+  Intel/
+  Others/
+```
+
+That’s where `shutil` comes in! With a small script, you can:
+✅ Detect vendors from file names
+✅ Create vendor folders automatically
+✅ Move files into the right place
+✅ Keep your `export/` folder clean
+
+### ⚡ Common `shutil` Functions
+
+* `shutil.copy()` → Copy files
+* `shutil.copytree()` → Copy entire folders
+* `shutil.move()` → Move (cut–paste) files/folders
+* `shutil.rmtree()` → Delete folders
+* `shutil.make_archive()` → Create zip/tar backups
+* `shutil.unpack_archive()` → Extract archives
+
+### 🔍 Pro Tips
+
+* Use `python -m py_compile script.py` to catch syntax/indentation issues early.
+* Ignore `__pycache__/` and `*.pyc` in git (Python auto-generates these).
+* Pair with a linter like `flake8` for cleaner code.
+
 
 This is useful for cleaning up exports from systems that dump many files into one folder.
 
