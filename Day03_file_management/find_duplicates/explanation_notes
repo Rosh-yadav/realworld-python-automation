@@ -1,0 +1,96 @@
+
+## 🧩 Scenario Overview
+
+You have folders with **duplicate files** like:
+
+```
+file_abc.jpg
+file_abc(1).jpg
+file_xyz.jpg
+file_xyz(1).jpg
+```
+
+You want to **automatically detect and delete** files that have a `(1)` in their name, **but only if** the original (without `(1)`) also exists.
+
+---
+
+## ⚙️ Step-by-Step Thought Process
+
+### 1️⃣ What makes a file a duplicate?
+
+Any file name that ends with `(1)` before its extension, **and** the same name exists without `(1)`.
+
+Example:
+✅ Delete `file_abc(1).jpg`
+❌ Keep `file_abc.jpg`
+
+---
+
+### 2️⃣ How to detect this pattern?
+
+We can use Python string operations or regex.
+Easiest way for now:
+
+```python
+if "(1)" in filename:
+```
+
+Then build the “original name” by removing `(1)`.
+
+---
+
+### 3️⃣ How to check if original exists?
+
+Use `os.path.exists(original_path)`.
+
+---
+
+### 4️⃣ How to delete safely?
+
+Use `os.remove(path)` — but **always print first** (for testing).
+Once confident, uncomment the delete line.
+
+---
+
+### 5️⃣ Handle subfolders?
+
+We can walk through all subfolders using:
+
+```python
+for root, dirs, files in os.walk(base_folder):
+```
+
+### 🧠 Why This Works
+
+* `os.walk()` → goes through all folders & subfolders.
+* `if "(1)" in filename:` → identifies duplicates.
+* `.replace("(1)", "")` → builds the expected original filename.
+* `os.path.exists()` → confirms that original exists.
+* `os.remove()` → deletes only the duplicate.
+
+---
+
+### 🧪 Example Run
+
+**Before:**
+
+```
+C:\Data\temp\
+│
+├── file_abc.jpg
+├── file_abc(1).jpg
+├── file_xyz.jpg
+├── file_xyz(1).jpg
+├── notes.txt
+```
+
+**After:**
+
+```
+C:\Data\temp\
+│
+├── file_abc.jpg
+├── file_xyz.jpg
+├── notes.txt
+```
+
