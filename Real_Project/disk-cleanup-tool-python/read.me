@@ -1,0 +1,82 @@
+# Disk Cleanup Tool (Python)
+
+## Overview
+
+The **Disk Cleanup Tool** is a Python automation project that scans a directory for log files, identifies files larger than a specified size, deletes them, and generates a cleanup report.
+
+This project was built as part of my Python for DevOps learning journey to practice file system automation and report generation.
+
+---
+
+## Features
+
+* Scan a directory for `.log` files
+* Count the total number of log files
+* Check the size of each log file
+* Delete log files larger than a specified threshold
+* Calculate the total disk space freed
+* Generate a cleanup report
+* Practice real-world file system automation
+
+---
+
+## Project Structure
+
+```
+disk-cleanup-tool-python/
+│
+├── logs/
+│   ├── app.log
+│   ├── error.log
+│   └── debug.log
+│
+├── cleanup.py
+├── report.txt
+└── README.md
+```
+
+---
+
+## Technologies Used
+
+* Python 3
+* os module
+* File Handling
+* Loops
+* Conditional Statements
+
+---
+
+## How It Works
+
+1. Scan the `logs` directory.
+2. Find all `.log` files.
+3. Check the size of each file.
+4. Delete files larger than the configured threshold.
+5. Calculate the total disk space freed.
+6. Generate a cleanup report.
+
+---
+
+## Sample Report
+
+```
+Disk Cleanup Report
+
+Files Scanned : 5
+
+Deleted Files
+
+old.log
+debug.log
+
+Space Freed
+
+1024 Bytes
+
+Status
+
+Cleanup Successful
+```
+
+---
