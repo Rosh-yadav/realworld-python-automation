@@ -1,0 +1,13 @@
+2026-08-01 09:15:10 INFO Application Started
+2026-08-01 09:16:22 INFO User Login
+2026-08-01 09:17:45 WARNING High Memory Usage
+2026-08-01 09:25:40 ERROR Disk Full
+2026-08-01 09:18:01 ERROR Database Connection Failed
+2026-08-01 09:22:30 ERROR Database Connection Failed
+2026-08-01 09:25:40 ERROR Disk Full
+2026-08-01 09:25:40 ERROR Disk Full
+2026-08-01 09:28:50 ERROR Database Connection Failed
+2026-08-01 09:25:40 ERROR Disk Full
+2026-08-01 09:18:01 ERROR Database Connection Failed
+2026-08-01 09:18:40 INFO API Request Successful
+2026-08-01 09:19:10 CRITICAL Disk Full
